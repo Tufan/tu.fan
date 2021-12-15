@@ -1,9 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Three.js dancing Tree (for Xmas)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://use.typekit.net/bji5ovt.css"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <canvas class="webgl"></canvas>
-<h1>Happy Holidays <small>from the</small> Unal Styles</h1>
+<h1><small>With</small> Seasonal Wishes <small>from</small> PeHaa</h1>
 <button id="play-music" type="button">Play music</button>
 <footer>
-  <p style="display:none">Built with Three.js and GSAP.</p>
-  <p style="display:none">Inspired by <a href="https://threejs-audio-reactive-visual.netlify.app/">this demo by Francesco Michelini</a></p>
+  <p>Built with Three.js and GSAP.</p>
+  <p>Inspired by <a href="https://threejs-audio-reactive-visual.netlify.app/">this demo by Francesco Michelini</a></p>
 </footer>
 <script type="x-shader/x-vertex" id="vertexShader">
   uniform float uTime;
@@ -189,3 +201,8 @@ void main() {
   gl_FragColor = vec4(mix(vec3(uv, 1.0), vec3(0.0, 1.0, 1.0), 1.0 - n*n) , n * n * n );
 }
 </script>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
